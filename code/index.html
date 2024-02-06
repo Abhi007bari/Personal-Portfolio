@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Portfolio website</title>
+    <link rel="icon" type="image.png" href="/Content/circle img.PNG">
+</head>
+
+
+<body>
+
+    <!--<div class="wrap-2"><canvas id="liquid"></canvas></div>-->
+
+    
+    
+    <nav id="desktop-nav">
+        <div class="logo">Abhishek Bari</div>
+        
+        <!----------------------------------------------------------navbar section-------------------------->
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--------------------------------------------------------------Hamburger------------------------------------>
+    <nav id="hamburger-nav">
+        <div class="logo">Abhishek Bari</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------------------------------------------picture----------------------------------------->
+    <section id="profile">
+        <div class="profile__pic">  <!--section__pic__container-->
+            <img src="/Content/circle img.PNG" alt="Abhishek profile">
+        </div>
+
+        <div class="profile__text">
+            <p class="profile__text__1">Hello, I'am</p>
+            <h1 class="title">Abhishek Bari</h1>
+            <p class="profile__text__2">Frontend Developer</p>
+        </div>
+
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about__text">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="/Content/square.png" alt="">
+            </div>
+            
+            <div class="column right">
+                <div class="text">Hello there! I'm Abhishek Bari <span>Frontend developer</span></div> 
+                <p> I am always with a passionate to learn new languages.
+                    My journey began with a curiosity for creating visually appealing and responsive websites that seamlessly blend design with functionality. 
+                    I have a solid foundation in HTML, CSS,and JavaScript,and I am constantly exploring new technologies to stay on the cutting edge of frontend development. During my academic journey, I had the opportunity to work on projects that honed my skills in building modern and intuitive user interfaces. 
+                    am particularly enthusiastic about creating seamless and engaging user experiences, and I am eager to contribute my skills to real-world projects.</p>
+                    <div class="btn-container">
+                        <button
+                        class="btn btn-color-2"
+                        onclick="window.open('/Content/Abhishek Bari.pdf')">
+                        Download CV
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="experience" id="experience">
+    <div class="experience_text">
+        <h1>Experience</h1>
+    </div>
+
+    <div class="experience-content">
+        <div class="coloum left">
+            <h3>Internship</h3>
+            <h4>2023.1-2023.4</h4>
+        </div>
+
+        <div class="coloum right">
+            <div class="intern_about">
+            <p><b>Company:</b> Heuristic Technopark</br>
+                <b> Name: </b> Movie Ticket Booking System</br>
+<b>Technologies: </b> HTML5, CSS3, Python, Django, Javascript </br>
+            <b>Contribution:</b> <br>•Work on website<br>
+•Contributed to a positive team environment by collaborating with fellow interns on
+group projects and presentations.<br>
+•Supported staff members in their daily tasks, reducing workload burden and allowing
+for increased focus on higher-priority assignments.<br>
+•Utilized HTML, CSS, and JavaScript to create visually appealing and responsive web
+pages that met client requirements. </br> </p>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------------skill section --------------------------->
+<section class="skills" id="skills">
+    <p class="skill_text_p1">Technical skills</p>
+    <div class="skill_container">
+        <div class="title">
+            <h2>Skills</h2>
+            <div class="skill-info-upper-container">
+                <div class="skill-info-container">
+                    <div class="img">
+                        <img src="/Content/html.png">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="img">
+                        <img src="/Content/css.png">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="img">
+                        <img src="/Content/java-script.png">
+                        <h3>JAVA-SCRIPT</h3>
+                    </div>
+                    <div class="img">
+                        <img src="/Content/react.png">
+                        <h3>REACT</h3>
+                    </div>
+                    <div class="img">
+                        <img src="/Content/sql-server.png">
+                        <h3>SQL</h3>
+                    </div>
+                    <div class="img">
+                        <img src="/Content/java.png">
+                        <h3>JAVA</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+        <div id="social-container">
+            <img src="/Content/linkdin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/abhi-bari-b5bb0b22b/'">
+        <div id="social-container">
+            <img src="/Content/insta.png" alt="My Instagram profile" class="icon" onclick="location.href='https://instagram.com/theabhibari/'">
+        <div id="social-container">
+                <img src="/Content/github.png" alt="My Instagram profile" class="icon" onclick="location.href='https://github.com/Abhi007bari?tab=repositories/'">
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</section>
+
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
